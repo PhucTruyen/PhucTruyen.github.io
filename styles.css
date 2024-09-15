@@ -1,0 +1,133 @@
+/* General Page Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;  /* Dark background */
+  color: white;  /* Text color */
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000133; /* Darker background for the header */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.intro p {
+  font-size: 2rem;
+}
+
+.wave {
+  animation: wave-animation 1s infinite;
+}
+
+/* Animation for the waving emoji */
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.name-highlight {
+  color: #00f0ff;
+  background: linear-gradient(to right, #00f0ff, #2035f0);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  border: 5px solid #a020f0;  /* Border with gradient effect */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Navigation Menu */
+/* Navigation Menu */
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav ul li a:hover {
+  color: #a020f0; /* Hover color effect */
+}
+
+/* About, Skills, Projects, and Contact Sections */
+section {
+  padding: 2rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project-item {
+  background-color: #222;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-button:hover {
+  background-color: #218838;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+}
